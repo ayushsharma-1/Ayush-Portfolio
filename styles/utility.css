@@ -1,0 +1,42 @@
+/*  */
+* {
+  margin: 0;
+  padding: o;
+}
+body {
+  font-family: poppins;
+  background-color: #0c2245;
+  color: #faf0e4;
+}
+/* Untility  */
+.bold {
+  font-weight: bold;
+}
+.light {
+  color: #99c4fc;
+}
+.padding {
+  padding: 10px;
+}
+.white {
+  color: white;
+  text-decoration: none;
+}
+
+.large{
+  font-size: x-large;
+}
+
+.height{
+  height: 300px;
+}
+a{
+  text-decoration: none;
+}
+
+.sub-title{
+  margin-left: 10px;
+}
+.height{
+  font-size: 12px;
+}
