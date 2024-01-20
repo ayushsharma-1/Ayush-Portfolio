@@ -17,7 +17,7 @@ To set up and run Ayush Sharma's portfolio project website, follow these steps:
 
 1. Clone the Repository:
     ```bash
-    git clone [repository_url]
+    git clone [git@github.com:ayushsharma-1/Ayush-Portfolio.git]
     ```
 
 2. Navigate to the Project Directory:
