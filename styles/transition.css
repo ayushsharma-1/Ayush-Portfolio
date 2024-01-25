@@ -182,7 +182,9 @@ nav ul li a:hover::after {
 #portfolio {
   padding: 50px 10px;
 }
-
+#contact-btn{
+  margin-top: 5px
+}
 .btn {
   margin: 50px auto;
   width: fit-content;
