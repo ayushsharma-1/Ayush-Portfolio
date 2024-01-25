@@ -35,8 +35,22 @@ a{
 }
 
 .sub-title{
-  margin-left: 10px;
+  margin-top: 40px;
+    font-size:60px;
+    margin-left:100px ;
+}
+.sub-title1{
+  margin-top: 40px;
+  font-size:60px;
 }
 .height{
   font-size: 12px;
+}
+@media screen and (min-width:1024px){
+  .sub-title{
+    margin-left: 648px;
+  }
+  .sub-title1{
+    margin-left: 450px;
+  }
 }
