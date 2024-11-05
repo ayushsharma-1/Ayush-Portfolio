@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // LeetCode Badge display
     const leetCodeBadges = [
-        { name: "Knight", img: "../assets/images/coding/Knight.gif" },
+        { name: "Knight", img: "./assets/images/coding/Knight.gif" },
     ];
 
     const leetCodeContainer = document.createElement("div");
