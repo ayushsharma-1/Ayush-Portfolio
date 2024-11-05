@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ayush Sharma • Portfolio</title>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Ayush Sharma • Portfolio">
+    <meta name="description" content="Student in CS development">
+    <meta name="theme-color" content="#AD6DF4">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:title" content="Ayush Sharma • Portfolio">
+    <meta property="og:description" content="Student in IT development">
+    <meta property="og:image" content="./assets/images/about/AYush.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="#">
+    <meta property="twitter:title" content="Ayush Sharma • Portfolio">
+    <meta property="twitter:description" content="Student in CS development">
+    <meta property="twitter:image" content="./assets/images/about/AYush.jpg">
+    <!-- CSS -->
+    <link href="styles/nordbootstrap.css" rel="stylesheet">
+    <link href="styles/style_nord.css" rel="stylesheet">
+    <!-- CSS SweetAlert2 -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-borderless@5.0.10/borderless.min.css"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-borderless@5.0.10/borderless.min.css">
+    </noscript>
+    <!-- CSS Swiper's  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- CSS Kursor -->
+    <link href="https://cdn.jsdelivr.net/npm/kursor@0.1.6/dist/kursor.min.css" rel="stylesheet">
+    <!-- CSS Tippy.js -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/main/img_favicon.png">
+    <!-- JS ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body data-bs-spy="scroll">
+    <!-- Navbar Section -->
+    <nav id="topheader" id
+        class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top py-2 font-weight-bold shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">Ayush Sharma<span class="text-primary font-weight-bolder"></span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><span class="text-primary">0.</span> About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><span class="text-primary">1.</span> Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects"><span class="text-primary">2.</span> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education"><span class="text-primary">3.</span> Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses"><span class="text-primary">4.</span> Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements"><span class="text-primary">5.</span> Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><span class="text-primary">6.</span> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar Section -->
+
+    <!-- Header Section -->
+    <section id="header" class="white img-background">
+        <div class="container vh-100 d-flex align-items-center justify-content-center">
+            <div class="row d-flex align-items-center">
+                <!-- Profile picture -->
+                <div class="col-lg-4 col-sm-12 col-md-12 text-center sr-header load-hidden">
+                    <img id="img-pfp" data-tilt src="./assets/images/about/AYush.jpg"
+                        class="border-pfp img-fluid img-resize rounded-circle shadow" alt="pfp-img" loading="lazy">
+                </div>
+
+                <!-- End Profile picture -->
+
+                <!-- Heading -->
+                <div class="col-lg-8 col-sm-12 col-md-12 text-left">
+                    <h5 class="text-secondary mb-0 sr-header load-hidden">Hey there! I'm -</h5>
+                    <h1 class="font-brand text-secondary display-1 mb-2 sr-header load-hidden sketch-underline">
+                        Ayush Sharma<span class="text-primary">. </span>&nbsp;</h1>
+                    <svg viewBox="0 0 1 1" aria-hidden="true"
+                        style="position:absolute;pointer-events:none;width:1px;height:1px">
+                        <mask id="svg-mask-status-idle" maskContentUnits="objectBoundingBox" viewBox="0 0 1 1">
+                            <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+                            <circle fill="black" cx="0.25" cy="0.25" r="0.375"></circle>
+                        </mask>
+                        <mask id="svg-mask-status-online" maskContentUnits="objectBoundingBox" viewBox="0 0 1 1">
+                            <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+                        </mask>
+                        <mask id="svg-mask-status-dnd" maskContentUnits="objectBoundingBox" viewBox="0 0 1 1">
+                            <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+                            <rect fill="black" x="0.125" y="0.375" width="0.75" height="0.25" rx="0.125" ry="0.125">
+                            </rect>
+                        </mask>
+                        <mask id="svg-mask-status-offline" maskContentUnits="objectBoundingBox" viewBox="0 0 1 1">
+                            <circle fill="white" cx="0.5" cy="0.5" r="0.5"></circle>
+                            <circle fill="black" cx="0.5" cy="0.5" r="0.25"></circle>
+                        </mask>
+                        <mask id="svg-mask-status-online-mobile" maskContentUnits="objectBoundingBox" viewBox="0 0 1 1">
+                            <rect fill="white" x="0" y="0" width="1" height="1" rx="0.1875" ry="0.125"></rect>
+                            <rect fill="black" x="0.125" y="0.16666666666666666" width="0.75" height="0.5"></rect>
+                            <ellipse fill="black" cx="0.5" cy="0.8333333333333334" rx="0.125" ry="0.08333333333333333">
+                            </ellipse>
+                        </mask>
+                    </svg>
+                    <h3 class="text-secondary mb-0 sr-header load-hidden">Software engineer</h3>
+                    <p class="text-secondary mb-3 sr-header load-hidden" id="status-text"><svg height="16" width="16"
+                            id="status-svg">
+                            <rect width="16" height="16" x="0" y="0" fill="hsl(223, 6%, 53%)"
+                                mask="url(#svg-mask-status-offline)"></rect>
+                        </svg>&nbsp;
+                        <span>Currently Offline</span>
+                    </p>
+                    <a href="https://github.com/ayushsharma-1"
+                        class="btn btn-sm btn-outline-light sr-header load-hidden" target="_blank" rel="noreferrer"><i
+                            data-eva="github-outline"></i>&nbsp;GitHub</a>
+                    <a href="https://www.linkedin.com/in/ayush-sharma-ba6a8324a"
+                        class="btn btn-sm btn-outline-light sr-header load-hidden" target="_blank" rel="noreferrer"><i
+                            data-eva="linkedin-outline"></i>&nbsp;LinkedIn</a>
+                    <a href="mailto:ayushsharma18001@gmail.com"
+                        class="btn btn-sm btn-outline-light sr-header load-hidden" target="_blank" rel="noreferrer"><i
+                            data-eva="email-outline"></i>&nbsp;E-mail</a>
+                    <a href="./assets/pdf/Ayush-Sharma-CV.pdf" class="btn btn-sm btn-outline-light sr-header load-hidden" target="_blank" rel="noreferrer"><i
+                            data-eva="download-outline"></i>&nbsp;Resume</a>
+                </div>
+                <!-- End Heading -->
+            </div>
+        </div>
+        <svg class="wave" viewBox="0 0 1440 205.854" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#3B4252" fill-opacity="1"
+                d="M 0.202 79.477 L 22.002 100.777 C 43.802 122.477 87.202 164.477 131.202 180.777 C 174.702 196.477 218.202 186.477 262.202 159.477 C 305.702 132.477 349.202 90.477 393.202 68.777 C 436.602 47.477 480.202 47.477 524.202 58.177 C 567.502 68.477 611.202 90.477 655.202 100.777 C 698.402 111.477 742.202 111.477 785.202 106.177 C 829.302 100.477 873.202 90.477 916.202 63.477 C 960.202 36.477 1004.202 -5.523 1047.202 4.777 C 1091.102 15.477 1135.202 79.477 1178.202 95.477 C 1222.002 111.477 1265.202 79.477 1309.202 58.177 C 1352.902 36.477 1396.202 26.477 1418.202 20.777 L 1440.202 15.477 L 1440.202 207.477 L 1418.402 207.477 C 1396.602 207.477 1353.202 207.477 1309.202 207.477 C 1265.702 207.477 1222.202 207.477 1178.202 207.477 C 1134.702 207.477 1091.202 207.477 1047.202 207.477 C 1003.802 207.477 960.202 207.477 916.202 207.477 C 872.902 207.477 829.202 207.477 785.202 207.477 C 742.002 207.477 698.202 207.477 655.202 207.477 C 611.102 207.477 567.202 207.477 524.202 207.477 C 480.202 207.477 436.202 207.477 393.202 207.477 C 349.302 207.477 305.202 207.477 262.202 207.477 C 218.402 207.477 175.202 207.477 131.202 207.477 C 87.502 207.477 44.202 207.477 22.202 207.477 L 0.202 207.477 Z" />
+        </svg>
+    </section>
+    <!-- End Header Section -->
+
+    <!-- About me Section -->
+    <section id="about" class="blue">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h2 class="text-center text-primary font-weight-bolder">
+                        <about />
+                    </h2>
+                    <h5 class="text-center text-success">
+                        We don't know anything about you, tell us more.
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 my-auto">
+
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>
+                                “ From a young age, I have been captivated by the world of technology, which naturally
+                                drew me toward development.
+                                I thrive on the blend of logic, creativity, and problem-solving that this field offers,
+                                making it the perfect fit for my analytical mindset.
+                                My strong attention to detail, coupled with my determination and curiosity,
+                                fuels my continuous growth in this dynamic landscape.
+                                I am genuinely excited about the possibilities within computer development,
+                                as it aligns seamlessly with my interests and aspirations. ”
+                            </p>
+                        </blockquote>
+                    </figure>
+                </div>
+                <div class="col-lg-5 d-none d-xl-block d-lg-block">
+                    <img src="./assets/images/about/About.png" class="img-unselectable img-floating img-fluid" alt="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg class="wave" viewBox="0 0 1440 205.854" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#3B4252" fill-opacity="1"
+            d="M 0.202 122.184 L 22.002 100.884 C 43.802 79.184 87.202 37.184 131.202 20.884 C 174.702 5.184 218.202 15.184 262.202 42.184 C 305.702 69.184 349.202 111.184 393.202 132.884 C 436.602 154.184 480.202 154.184 524.202 143.484 C 567.502 133.184 611.202 111.184 655.202 100.884 C 698.402 90.184 742.202 90.184 785.202 95.484 C 829.302 101.184 873.202 111.184 916.202 138.184 C 960.202 165.184 1004.202 207.184 1047.202 196.884 C 1091.102 186.184 1135.202 122.184 1178.202 106.184 C 1222.002 90.184 1265.202 122.184 1309.202 143.484 C 1352.902 165.184 1396.202 175.184 1418.202 180.884 L 1440.202 186.184 L 1440.202 -5.816 L 1418.402 -5.816 C 1396.602 -5.816 1353.202 -5.816 1309.202 -5.816 C 1265.702 -5.816 1222.202 -5.816 1178.202 -5.816 C 1134.702 -5.816 1091.202 -5.816 1047.202 -5.816 C 1003.802 -5.816 960.202 -5.816 916.202 -5.816 C 872.902 -5.816 829.202 -5.816 785.202 -5.816 C 742.002 -5.816 698.202 -5.816 655.202 -5.816 C 611.102 -5.816 567.202 -5.816 524.202 -5.816 C 480.202 -5.816 436.202 -5.816 393.202 -5.816 C 349.302 -5.816 305.202 -5.816 262.202 -5.816 C 218.402 -5.816 175.202 -5.816 131.202 -5.816 C 87.502 -5.816 44.202 -5.816 22.202 -5.816 L 0.202 -5.816 Z" />
+    </svg>
+    <!-- End About me Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h2 class="text-center text-primary font-weight-bolder">
+                        < Skills />
+                    </h2>
+                    <h5 class="text-center text-success">
+                        Concretely, what do you know ?
+                    </h5>
+                </div>
+            </div>
+
+            <div class="row text-secondary">
+                <div class="col-lg-4">
+                    <h5 class="text-secondary font-weight-bolder">OS</h5>
+                    <hr>
+                    <p class="sr-skills load-hidden">
+                        <img height="20" width="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" class="img-unselectable img-floating img-fluid" alt="linux-icon" />&nbsp;Linux
+                    </p>
+                    <p class="sr-skills load-hidden">
+                        <img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/windows8/windows8-original.svg" alt="windows-icon" />&nbsp;Windows</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-secondary font-weight-bolder">Languages</h5>
+                    <hr>
+                    <p class="sr-skills load-hidden">
+                        <img height="20" width="20" src="https://techstack-generator.vercel.app/cpp-icon.svg" class="img-unselectable img-floating img-fluid" alt="C++-icon" />&nbsp;C++</p>
+                    <p class="sr-skills load-hidden">
+                        <img height="20" width="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" class="img-unselectable img-floating img-fluid" alt="py-icon" />&nbsp;Python</p>
+                    <p class="sr-skills load-hidden">
+                        <img height="20" width="20" src="https://skillicons.dev/icons?i=c" class="img-unselectable img-floating img-fluid" alt="c-icon" />&nbsp;C</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-secondary font-weight-bolder">Databases</h5>
+                    <hr>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://www.dbi-services.com/wp-content/uploads/2022/01/Logo-Mongodb-carre.png" alt="mongodb-icon" />&nbsp;MongoDB</p>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="sql-icon" />&nbsp;SQL</p>
+                </div>
+            </div>
+            <div class="row text-secondary mt-lg-4">
+                <div class="col-lg-4">
+                    <h5 class="text-secondary font-weight-bolder">Frameworks</h5>
+                    <hr>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react-icon" />&nbsp;React</p>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png" alt="NodeJS-icon" />&nbsp;NodeJS</p>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://skillicons.dev/icons?i=express" alt="Express-icon" />&nbsp;Express</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-secondary font-weight-bolder">DevOps</h5>
+                    <hr>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://skillicons.dev/icons?i=ubuntu" alt="Ubuntu-icon" />&nbsp;Ubuntu</p>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="docker-icon" />&nbsp;Docker</p>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://skillicons.dev/icons?i=ansible" alt="Ansible-icon" />&nbsp;Ansible</p>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://skillicons.dev/icons?i=prometheus" alt="prometheus-icon" />&nbsp;Prometheus</p>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://skillicons.dev/icons?i=github" alt="github-icon" />&nbsp;GitHub</p>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://skillicons.dev/icons?i=bash" alt="BASH-icon" />&nbsp;Shell-Scripting</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-secondary font-weight-bolder">CLOUD</h5>
+                    <hr>
+                    <p class="sr-skills load-hidden"><img height="20" width="20" class="img-unselectable img-floating img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" alt="AWS-icon" />&nbsp;AWS</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Projects Section -->
+    <svg class="wave" viewBox="0 0 1440 205.854" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#3B4252" fill-opacity="1"
+            d="M 0.202 79.477 L 22.002 100.777 C 43.802 122.477 87.202 164.477 131.202 180.777 C 174.702 196.477 218.202 186.477 262.202 159.477 C 305.702 132.477 349.202 90.477 393.202 68.777 C 436.602 47.477 480.202 47.477 524.202 58.177 C 567.502 68.477 611.202 90.477 655.202 100.777 C 698.402 111.477 742.202 111.477 785.202 106.177 C 829.302 100.477 873.202 90.477 916.202 63.477 C 960.202 36.477 1004.202 -5.523 1047.202 4.777 C 1091.102 15.477 1135.202 79.477 1178.202 95.477 C 1222.002 111.477 1265.202 79.477 1309.202 58.177 C 1352.902 36.477 1396.202 26.477 1418.202 20.777 L 1440.202 15.477 L 1440.202 207.477 L 1418.402 207.477 C 1396.602 207.477 1353.202 207.477 1309.202 207.477 C 1265.702 207.477 1222.202 207.477 1178.202 207.477 C 1134.702 207.477 1091.202 207.477 1047.202 207.477 C 1003.802 207.477 960.202 207.477 916.202 207.477 C 872.902 207.477 829.202 207.477 785.202 207.477 C 742.002 207.477 698.202 207.477 655.202 207.477 C 611.102 207.477 567.202 207.477 524.202 207.477 C 480.202 207.477 436.202 207.477 393.202 207.477 C 349.302 207.477 305.202 207.477 262.202 207.477 C 218.402 207.477 175.202 207.477 131.202 207.477 C 87.502 207.477 44.202 207.477 22.202 207.477 L 0.202 207.477 Z" />
+    </svg>
+    <section id="projects" class="blue">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h2 class="text-center text-primary font-weight-bolder">
+                        < Projects />
+                    </h2>
+                    <h5 class="text-center text-success">
+                        And what have you done since you started developing ?
+                    </h5>
+                </div>
+            </div>
+            <div class="row" id="repository">
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a href="https://github.com/ayushsharma-1?tab=repositories" class="btn btn-primary" target="_blank"
+                        rel="noreferrer">View
+                        more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg class="wave" viewBox="0 0 1440 205.854" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#3B4252" fill-opacity="1"
+            d="M 0.202 122.184 L 22.002 100.884 C 43.802 79.184 87.202 37.184 131.202 20.884 C 174.702 5.184 218.202 15.184 262.202 42.184 C 305.702 69.184 349.202 111.184 393.202 132.884 C 436.602 154.184 480.202 154.184 524.202 143.484 C 567.502 133.184 611.202 111.184 655.202 100.884 C 698.402 90.184 742.202 90.184 785.202 95.484 C 829.302 101.184 873.202 111.184 916.202 138.184 C 960.202 165.184 1004.202 207.184 1047.202 196.884 C 1091.102 186.184 1135.202 122.184 1178.202 106.184 C 1222.002 90.184 1265.202 122.184 1309.202 143.484 C 1352.902 165.184 1396.202 175.184 1418.202 180.884 L 1440.202 186.184 L 1440.202 -5.816 L 1418.402 -5.816 C 1396.602 -5.816 1353.202 -5.816 1309.202 -5.816 C 1265.702 -5.816 1222.202 -5.816 1178.202 -5.816 C 1134.702 -5.816 1091.202 -5.816 1047.202 -5.816 C 1003.802 -5.816 960.202 -5.816 916.202 -5.816 C 872.902 -5.816 829.202 -5.816 785.202 -5.816 C 742.002 -5.816 698.202 -5.816 655.202 -5.816 C 611.102 -5.816 567.202 -5.816 524.202 -5.816 C 480.202 -5.816 436.202 -5.816 393.202 -5.816 C 349.302 -5.816 305.202 -5.816 262.202 -5.816 C 218.402 -5.816 175.202 -5.816 131.202 -5.816 C 87.502 -5.816 44.202 -5.816 22.202 -5.816 L 0.202 -5.816 Z" />
+    </svg>
+    <!-- End Projects Section -->
+
+    <!-- Education Section -->
+    <section id="education" class="">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h2 class="text-center text-primary font-weight-bolder">
+                        < Education />
+                    </h2>
+                    <h5 class="text-center text-success">
+                        But otherwise you have degrees?
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card bg-white border-white">
+                        <div class="card-body text-secondary">
+                            <div id="content" class="d-flex justify-content-between align-items-center">
+                                <ul class="timeline" style="flex-grow: 1;">
+                                    <li class="event" data-date="2022 - 2026">
+                                        <h3>Bachelor of Technology, Computer Science</h3>
+                                        <p><span class="text-pink">AKTU</span>&nbsp;Kanpur, Uttar Pradesh</p>
+                                        <p class="m-0 text-info">CGPA: 8.68</p>
+                                        <p class="m-0 text-info">In progress</p>
+                                    </li>
+                                    <li class="event" data-date="2020-2021">
+                                        <h3>Intermediate</h3>
+                                        <p>Physics, Chemistry, Mathematics</p>
+                                        <p><span class="text-pink">ISC</span>&nbsp;Morning Star, Orai, Jalaun</p>
+                                        <p class="m-0 text-info">Percentage: 91%</p>
+                                    </li>
+                                    <li class="event" data-date="2018-2019">
+                                        <h3 class="mb-0">High School</h3>
+                                        <p><span class="text-pink">ICSE</span>&nbsp;Morning Star, Orai, Jalaun</p>
+                                        <p class="m-0 text-info">Percentage: 91%</p>
+                                    </li>
+                                </ul>
+                                <a href="./assets/pdf/Ayush Transcript.docx" class="btn btn-primary" download="transcript.pdf" style="margin-left: 20px;">Download Transcript</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- End Education Section -->
+
+    <!-- Courses Section -->
+    <svg class="wave" viewBox="0 0 1440 205.854" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#3B4252" fill-opacity="1"
+            d="M 0.202 79.477 L 22.002 100.777 C 43.802 122.477 87.202 164.477 131.202 180.777 C 174.702 196.477 218.202 186.477 262.202 159.477 C 305.702 132.477 349.202 90.477 393.202 68.777 C 436.602 47.477 480.202 47.477 524.202 58.177 C 567.502 68.477 611.202 90.477 655.202 100.777 C 698.402 111.477 742.202 111.477 785.202 106.177 C 829.302 100.477 873.202 90.477 916.202 63.477 C 960.202 36.477 1004.202 -5.523 1047.202 4.777 C 1091.102 15.477 1135.202 79.477 1178.202 95.477 C 1222.002 111.477 1265.202 79.477 1309.202 58.177 C 1352.902 36.477 1396.202 26.477 1418.202 20.777 L 1440.202 15.477 L 1440.202 207.477 L 1418.402 207.477 C 1396.602 207.477 1353.202 207.477 1309.202 207.477 C 1265.702 207.477 1222.202 207.477 1178.202 207.477 C 1134.702 207.477 1091.202 207.477 1047.202 207.477 C 1003.802 207.477 960.202 207.477 916.202 207.477 C 872.902 207.477 829.202 207.477 785.202 207.477 C 742.002 207.477 698.202 207.477 655.202 207.477 C 611.102 207.477 567.202 207.477 524.202 207.477 C 480.202 207.477 436.202 207.477 393.202 207.477 C 349.302 207.477 305.202 207.477 262.202 207.477 C 218.402 207.477 175.202 207.477 131.202 207.477 C 87.502 207.477 44.202 207.477 22.202 207.477 L 0.202 207.477 Z" />
+    </svg>
+    <section id="courses" class="blue" style="overflow-x: hidden;">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h2 class="text-center text-primary font-weight-bolder">
+                        < Courses />
+                    </h2>
+                    <h5 class="text-center text-success">
+                        Have you taken any certifications?
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 d-none d-xl-block d-lg-block">
+                    <img src="./assets/images/courses/certifications.png"
+                         class="img-unselectable img-floating img-fluid" 
+                         width="400px" height="400px" 
+                         loading="lazy" alt="illustration-courses-isometric">
+                </div>
+                <div class="col-lg-7 my-auto p-5">
+                    <div class="certification-scroll" id="certification-container">
+                        <div class="certification-list">
+                            <div class="card bg-warning border border-4 my-2">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bolder mb-0">Linux IT Professional Using Ubuntu</h5>
+                                    <p class="card-text">Udemy</p>
+                                    <p class="card-text">Achieved in October 2024</p>
+                                </div>
+                            </div>
+                            <div class="card bg-danger border border-4 my-2">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bolder mb-0">AWS Cloud Practitioner</h5>
+                                    <p class="card-text">Udemy</p>
+                                    <p class="card-text">Achieved in April 2024</p>
+                                </div>
+                            </div>
+                            <div class="card bg-pink border border-4 my-2">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bolder mb-0">Introduction to Programming in C</h5>
+                                    <p class="card-text">NPTEL</p>
+                                    <p class="card-text">Achieved in March 2023</p>
+                                </div>
+                            </div>
+                            <div class="card bg-primary border border-4 my-2">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bolder mb-0">Docker</h5>
+                                    <p class="card-text">KodeKloud</p>
+                                    <p class="card-text">Achieved in November 2024</p>
+                                </div>
+                            </div>
+                            <div class="card bg-warning border border-4 my-2">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bolder mb-0">Database Management System</h5>
+                                    <p class="card-text">Infosys Springboard</p>
+                                    <p class="card-text">Achieved in April 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <svg class="wave" viewBox="0 0 1440 205.854" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#3B4252" fill-opacity="1"
+            d="M 0.202 122.184 L 22.002 100.884 C 43.802 79.184 87.202 37.184 131.202 20.884 C 174.702 5.184 218.202 15.184 262.202 42.184 C 305.702 69.184 349.202 111.184 393.202 132.884 C 436.602 154.184 480.202 154.184 524.202 143.484 C 567.502 133.184 611.202 111.184 655.202 100.884 C 698.402 90.184 742.202 90.184 785.202 95.484 C 829.302 101.184 873.202 111.184 916.202 138.184 C 960.202 165.184 1004.202 207.184 1047.202 196.884 C 1091.102 186.184 1135.202 122.184 1178.202 106.184 C 1222.002 90.184 1265.202 122.184 1309.202 143.484 C 1352.902 165.184 1396.202 175.184 1418.202 180.884 L 1440.202 186.184 L 1440.202 -5.816 L 1418.402 -5.816 C 1396.602 -5.816 1353.202 -5.816 1309.202 -5.816 C 1265.702 -5.816 1222.202 -5.816 1178.202 -5.816 C 1134.702 -5.816 1091.202 -5.816 1047.202 -5.816 C 1003.802 -5.816 960.202 -5.816 916.202 -5.816 C 872.902 -5.816 829.202 -5.816 785.202 -5.816 C 742.002 -5.816 698.202 -5.816 655.202 -5.816 C 611.102 -5.816 567.202 -5.816 524.202 -5.816 C 480.202 -5.816 436.202 -5.816 393.202 -5.816 C 349.302 -5.816 305.202 -5.816 262.202 -5.816 C 218.402 -5.816 175.202 -5.816 131.202 -5.816 C 87.502 -5.816 44.202 -5.816 22.202 -5.816 L 0.202 -5.816 Z" />
+    </svg>
+    <!-- End Courses Section -->
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h2 class="text-center text-primary font-weight-bolder">
+                        < Achievements and Coding Profiles />
+                    </h2>
+                    <h5 class="text-center text-success">
+                        Have you ever won?
+                    </h5>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm">
+                    <img src="./assets/images/achievements/GDSC_page-0001.jpg" class="img-fluid" alt="GDSC Achievement" />
+                </div>
+                <div class="col-sm">
+                    <img src="./assets/images/achievements/flipkartgrid.jpg" class="img-fluid" alt="Flipkart Achievement" />
+                </div>
+                <div class="col-sm">
+                    <img src="./assets/images/achievements/Sustainathon.jpg" class="img-fluid" alt="Sustainathon Achievement" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <h3 class="text-center text-primary font-weight-bolder">Coding Profiles and Achievements</h3>
+                    <h5 class="text-center text-success">Here are some of my coding achievements:</h5>
+                    <div id="coding-profiles" class="achievement-list">
+                        <!-- Data will be injected here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <svg class="wave" viewBox="0 0 1440 205.854" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#3B4252" fill-opacity="1"
+            d="M 0.202 79.477 L 22.002 100.777 C 43.802 122.477 87.202 164.477 131.202 180.777 C 174.702 196.477 218.202 186.477 262.202 159.477 C 305.702 132.477 349.202 90.477 393.202 68.777 C 436.602 47.477 480.202 47.477 524.202 58.177 C 567.502 68.477 611.202 90.477 655.202 100.777 C 698.402 111.477 742.202 111.477 785.202 106.177 C 829.302 100.477 873.202 90.477 916.202 63.477 C 960.202 36.477 1004.202 -5.523 1047.202 4.777 C 1091.102 15.477 1135.202 79.477 1178.202 95.477 C 1222.002 111.477 1265.202 79.477 1309.202 58.177 C 1352.902 36.477 1396.202 26.477 1418.202 20.777 L 1440.202 15.477 L 1440.202 207.477 L 1418.402 207.477 C 1396.602 207.477 1353.202 207.477 1309.202 207.477 C 1265.702 207.477 1222.202 207.477 1178.202 207.477 C 1134.702 207.477 1091.202 207.477 1047.202 207.477 C 1003.802 207.477 960.202 207.477 916.202 207.477 C 872.902 207.477 829.202 207.477 785.202 207.477 C 742.002 207.477 698.202 207.477 655.202 207.477 C 611.102 207.477 567.202 207.477 524.202 207.477 C 480.202 207.477 436.202 207.477 393.202 207.477 C 349.302 207.477 305.202 207.477 262.202 207.477 C 218.402 207.477 175.202 207.477 131.202 207.477 C 87.502 207.477 44.202 207.477 22.202 207.477 L 0.202 207.477 Z" />
+    </svg>
+    <!-- Footer Section -->
+    <section id="contact">
+    <footer class="bg-light shadow-sm border-info">
+        <div class="container">
+            <div class="row p-4 d-flex justify-content-between align-items-lg-center">
+                <div class="col-6">
+                    <!-- Copyright -->
+                    <div class="text-left">
+                        Copyright&nbsp;&copy;
+                        <script>
+                            var currentYear = new Date().getFullYear();
+                            document.write(currentYear)
+                        </script>
+                        <a class="text-dark" href="https://github.com/ayushsharma-1">Ayush Sharma</a>
+                    </div>
+                    <!-- End Copyright -->
+                </div>
+                <div class="col-6">
+                    <!-- Social Media -->
+                    <div class="text-right">
+                        <a href="https://github.com/ayushsharma-1" class="" target="_blank" rel="noreferrer"><i
+                                data-eva="github-outline"></i></a>
+                        <a href="https://linkedin.com/in/ayush-sharma-ba6a8324a" class="" target="_blank" rel="noreferrer"><i
+                                data-eva="linkedin-outline"></i></a>
+                        <a href="mailto:ayushsharma18001@gmail.com" class="" target="_blank" rel="noreferrer"><i
+                                data-eva="email-outline"></i></a>
+                    </div>
+                    <!-- End Social Media -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+</section>
+</body>
+<!-- JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+<script src="https://unpkg.com/eva-icons@1.1.3/eva.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="https://cdn.jsdelivr.net/gh/0x5841524f4e/js-lanyard/lanyard.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+    integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- JS Local Script -->
+<script src="js/script_scroll.js"></script>
+<script src="js/script_icons.js"></script>
+<script src="js/script_api_github.js"></script>
+<script src="js/script_animate_scroll.js"></script>
+<script src="js/script_svg.js"></script>
+<script src="js/script-roll.js"></script>
+<script src="js/script_api_coding.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</html>
