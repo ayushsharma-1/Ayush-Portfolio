@@ -600,3 +600,19 @@ html.sr .load-hidden {
     margin: 10px 0;
 }
 
+
+.btn {
+    margin: 5px; /* Add margin to all buttons */
+}
+@media (max-width: 576px) {
+    .col-lg-8 {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: flex-start; /* Align buttons to the start */
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width on mobile */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+}
