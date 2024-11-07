@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function() {
         leetCodeContainer.innerHTML = `
             <h5>LeetCode Badge: ${badge.name}</h5>
             <img src="${badge.img}" alt="${badge.name} Badge" class="badge-image" />
-            <p>Highest Rating: 1971</p>
-            <p>Highest Rank: 263</p>
+            <p>Highest Rating: 2023</p>
+            <p>Highest Rank: 221</p>
         `;
     });
     document.getElementById("coding-profiles").appendChild(leetCodeContainer);
