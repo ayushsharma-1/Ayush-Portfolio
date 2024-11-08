@@ -9,7 +9,7 @@ $(document).ready(function() {
     };
 
     $.ajax(settings).done(function (response) {
-        const repositoriesToShow = 3;
+        const repositoriesToShow = 6;
         let repositoriesDisplayed = 0;
 
         for (let i = 0; i < response.length && repositoriesDisplayed < repositoriesToShow; i++) {
