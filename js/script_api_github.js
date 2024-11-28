@@ -1,12 +1,15 @@
 // Allow to show the repositories of the GitHub account in the portfolio section
 $(document).ready(function() {
     const settings = {
-        'async': true,
-        'crossDomain': true,
-        'url': 'https://api.github.com/users/ayushsharma-1/repos?type=owner&sort=updated',
-        'method': 'GET',
-        'headers': {}
-    };
+    'async': true,
+    'crossDomain': true,
+    'url': 'https://api.github.com/users/ayushsharma-1/repos?type=owner&sort=updated',
+    'method': 'GET',
+    'headers': {
+        'Authorization': 'PROCESS.ENV.GIT_HUB_API'
+    }
+};
+
 
     $.ajax(settings).done(function (response) {
         const repositoriesToShow = 6;
