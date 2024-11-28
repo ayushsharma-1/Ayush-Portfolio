@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // LeetCode Badge display
     const leetCodeBadges = [
-        { name: "Knight", img: "./assets/images/coding/Knight.gif" },
+        { name: "Knight", img: "./assets/images/coding/Guardian.gif" },
     ];
 
     const leetCodeContainer = document.createElement("div");
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
         leetCodeContainer.innerHTML = `
             <h5>LeetCode Badge: ${badge.name}</h5>
             <img src="${badge.img}" alt="${badge.name} Badge" class="badge-image" />
-            <p>Highest Rating: 2023</p>
+            <p>Highest Rating: 2161</p>
             <p>Highest Rank: 221</p>
         `;
     });
