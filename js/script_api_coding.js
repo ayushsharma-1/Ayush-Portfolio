@@ -97,4 +97,61 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
     });
     document.getElementById("coding-profiles").appendChild(leetCodeContainer);
+    
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const codechefUsername = "ayush_980";
+    const codechefApiUrl = `https://codechef-api.vercel.app/handle/${codechefUsername}`;
+    const leetCodeUsername = "ayush-018";
+    const codingProfilesContainer = document.getElementById("coding-profiles");
+
+    // Fetch CodeChef Profile Data
+    fetch(codechefApiUrl)
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                const { name, currentRating, highestRating, stars, heatMap, countryFlag, countryName } = data;
+
+                const heatmapHTML = heatMap.map(day => `
+                    <div 
+                        style="width: 20px; height: 20px; background-color: rgba(0, 0, 255, ${day.value / 50}); margin: 1px;" 
+                        title="${day.date}: ${day.value}">
+                    </div>
+                `).join('');
+
+                const codechefProfile = `
+                    <div class="profile-item">
+                        <h5>CodeChef</h5>
+                        <p>Username: ${name}</p>
+                        <p>Current Rating: ${currentRating}</p>
+                        <p>Highest Rating: ${highestRating}</p>
+                        <p>Stars: ${stars}</p>
+                        <p>
+                            <img src="${countryFlag}" alt="${countryName} Flag" style="width: 24px; height: 16px;" />
+                            ${countryName}
+                        </p>
+                        <div class="heatmap" style="display: flex; flex-wrap: wrap; width: 280px; justify-content: center; margin: 0 auto;">
+                            ${heatmapHTML}
+                        </div>
+
+                    </div>
+                `;
+                codingProfilesContainer.innerHTML += codechefProfile;
+            } else {
+                console.error("CodeChef API returned an error:", data);
+            }
+        })
+        .catch(error => console.error("Error fetching CodeChef data:", error));
+
+    // Fetch LeetCode Heatmap
+    const leetCodeHeatmapHTML = `
+        <div class="profile-item">
+            <h5>LeetCode</h5>
+            <p align="center">
+                <img align="top" src="https://leetcard.jacoblin.cool/${leetCodeUsername}?theme=light&font=Nunito&ext=heatmap" alt="LeetCode Heatmap" style="width: 100%; max-width: 400px;" />
+            </p>
+        </div>
+    `;
+    codingProfilesContainer.innerHTML += leetCodeHeatmapHTML;
 });
