@@ -29,58 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error("Error fetching Codeforces user info:", error));
 
-    // Fetch Codeforces rating history
-    fetch(codeforcesUserRatingUrl)
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === "OK") {
-                const ratingHistory = data.result;
-                const dates = ratingHistory.map(entry => new Date(entry.ratingUpdateTimeSeconds * 1000).toLocaleDateString());
-                const ratings = ratingHistory.map(entry => entry.newRating);
-
-                const ratingContainer = document.createElement("div");
-                ratingContainer.classList.add("profile-item");
-                ratingContainer.innerHTML = `<h5>Codeforces Rating History</h5><canvas id="ratingChart" width="400" height="200"></canvas>`;
-                document.getElementById("coding-profiles").appendChild(ratingContainer);
-
-                // Create the line chart for the rating history
-                const ctx = document.getElementById("ratingChart").getContext("2d");
-                new Chart(ctx, {
-                    type: "line",
-                    data: {
-                        labels: dates,
-                        datasets: [{
-                            label: "Codeforces Rating",
-                            data: ratings,
-                            borderColor: "rgba(75, 192, 192, 1)",
-                            backgroundColor: "rgba(75, 192, 192, 0.2)",
-                            fill: true,
-                            tension: 0.1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            x: {
-                                title: { display: true, text: 'Date' }
-                            },
-                            y: {
-                                title: { display: true, text: 'Rating' }
-                            }
-                        },
-                        plugins: {
-                            legend: {
-                                display: true,
-                                position: 'top'
-                            }
-                        }
-                    }
-                });
-            } else {
-                console.error("Codeforces API returned an error:", data);
-            }
-        })
-        .catch(error => console.error("Error fetching Codeforces rating history:", error));
-
     // LeetCode Badge display
     const leetCodeBadges = [
         { name: "Knight", img: "./assets/images/coding/Guardian.gif" },
@@ -97,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
     });
     document.getElementById("coding-profiles").appendChild(leetCodeContainer);
-    
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -134,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="heatmap" style="display: flex; flex-wrap: wrap; width: 280px; justify-content: center; margin: 0 auto;">
                             ${heatmapHTML}
                         </div>
-
                     </div>
                 `;
                 codingProfilesContainer.innerHTML += codechefProfile;
