@@ -429,7 +429,7 @@ hr {
     width: 40px;
     width: var(--cd-back-to-top-size);
     box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
-    background: url(../../res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
+    background: url(../assets/images/main/top-arrow.svg) no-repeat center 50%;
     background-color: var(--yellow);
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
 }
@@ -505,7 +505,7 @@ hr {
     }
 
 .img-background {
-    background-image: url('../images/main/img_background.svg');
+    background-image: url('../assets/images/main/img_background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -648,4 +648,322 @@ html.sr .load-hidden {
         margin-bottom: 10px; /* Add bottom margin for spacing */
     }
 }
+.project-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
+/* Project Cards */
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 2rem;
+}
+.project-card .card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(63, 60, 60, 0.1);
+    background: var(--secondary20);
+}
+.project-card:hover .card {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(74, 137, 220, 0.5);
+}
+.project-card img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Button Styling */
+.project-card .btn {
+    margin-top: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Source Code Button */
+.btn-dark {
+    background: linear-gradient(45deg, #343a40, #1d1f21);
+    border: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.btn-dark:hover {
+    background: linear-gradient(45deg, #1d1f21, #343a40);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(52, 58, 64, 0.8);
+}
+
+/* Live Button */
+.btn-live {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.btn-live:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.8);
+}
+
+
+/* Tech Stack Styles */
+.tech-stack {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tech-badge {
+    display: inline-block;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.tech-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Color Variations for each Tech */
+.tech-badge.react { background: linear-gradient(45deg, #61dafb, #21a1f1); }
+.tech-badge.node { background: linear-gradient(45deg, #68a063, #4e8b50); }
+.tech-badge.docker { background: linear-gradient(45deg, #2496ed, #006dbf); }
+.tech-badge.kubernetes { background: linear-gradient(45deg, #326ce5, #164db3); }
+.tech-badge.mongodb { background: linear-gradient(45deg, #4DB33D, #3D8B30); }
+.tech-badge.aws { background: linear-gradient(45deg, #FF9900, #CC7700); }
+.tech-badge.html { background: linear-gradient(45deg, #E34F26, #B33219); }
+.tech-badge.css { background: linear-gradient(45deg, #1572B6, #104F78); }
+.tech-badge.js { background: linear-gradient(45deg, #F7DF1E, #C4AF0E); }
+.tech-badge.tensorflow { background: linear-gradient(45deg, #FF6F00, #E65100); }
+.tech-badge.keras { background: linear-gradient(45deg, #D00000, #A00000); }
+.tech-badge.python { background: linear-gradient(45deg, #306998, #204080); }
+.tech-badge.django { background: linear-gradient(45deg, #092E20, #054012); }
+.tech-badge.firebase { background: linear-gradient(45deg, #FFCA28, #FFA000); }
+.tech-badge.api { background: linear-gradient(45deg, #009688, #00796B); }
+.tech-badge.ubuntu { background: linear-gradient(45deg, #E95420, #A73E12); }
+.tech-badge.ci-cd { background: linear-gradient(45deg, #1F1F1F, #3A3A3A); }
+.tech-badge.locationiq { background: linear-gradient(45deg, #00A86B, #007A50); }
+.tech-badge.gnews { background: linear-gradient(45deg, #1A73E8, #1257B1); }
+
+
+
+
+/* Experience Section */
+.experience-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fdf7f7;
+}
+
+/* Filter Buttons */
+.filter-tag {
+    background: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+.filter-tag:hover, .filter-tag.active {
+    background: #007bff;
+    color: white;
+}
+
+/* Experience Cards Container */
+.experience-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Individual Experience Card */
+.experience-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Company Logo */
+.company-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Job Title */
+.experience-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Company Name */
+.company-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+/* Experience Type (Internship/Freelance) */
+.experience-type {
+    font-style: italic;
+    color: #28a745;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* Duration */
+.duration {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-card {
+        width: 90%;
+    }
+}
+
+/*Bog*/
+/* Blog Section */
+#blogs {
+    padding: 60px 0;
+    background-color: #3B4252;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Remove underline from all anchor tags */
+.blog-card {
+    width: 320px; /* Increased size */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none !important;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: block;
+}
+
+/* Remove underline from links inside blog-card */
+.blog-card:hover {
+    text-decoration: none !important;
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Remove underline from nested content */
+.blog-card h3,
+.blog-card p {
+    text-decoration: none !important;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.blog-content {
+    padding: 20px;
+    color: #333;
+}
+
+/* Blog Card Title */
+.blog-content h3 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Blog Card Description */
+.blog-content p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Ensure no text-decoration inside the cards */
+.blog-card:hover h3,
+.blog-card:hover p,
+.blog-card:hover a {
+    text-decoration: none !important;
+}
+
+/* View More Button */
+.view-more-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none !important;
+    transition: transform 0.3s, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.view-more-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004080);
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.5);
+}

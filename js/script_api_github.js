@@ -1,50 +1,55 @@
-// Allow to show the repositories of the GitHub account in the portfolio section
-$(document).ready(function() {
-    const settings = {
-    'async': true,
-    'crossDomain': true,
-    'url': 'https://api.github.com/users/ayushsharma-1/repos?type=owner&sort=updated',
-    'method': 'GET',
-    'headers': {
-        'Authorization': 'PROCESS.ENV.GIT_HUB_API'
-    }
-};
-
-
-    $.ajax(settings).done(function (response) {
-        const repositoriesToShow = 6;
-        let repositoriesDisplayed = 0;
-
-        for (let i = 0; i < response.length && repositoriesDisplayed < repositoriesToShow; i++) {
-            const repo = response[i];
+document.addEventListener("DOMContentLoaded", function() {
+    const filterTags = document.querySelectorAll(".filter-tag");
+    const projectCards = document.querySelectorAll(".project-card");
+    
+    filterTags.forEach(tag => {
+        tag.addEventListener("click", function() {
+            filterTags.forEach(t => t.classList.remove("active"));
+            this.classList.add("active");
+            this.blur(); // Remove outline after click
             
-            if (!repo.fork) {
-                const repoName = repo.name;
-                const repoDescription = repo.description;
-                const repoLanguage = repo.language === 'Visual Basic .NET' ? 'VB.NET' : (repo.language === 'JavaScript' ? 'JS' : repo.language);
-                const repoUrl = repo.html_url;
-                const repoPublishDate = new Date(repo.created_at).toDateString();
+            const filter = this.getAttribute("data-filter");
+            
+            projectCards.forEach(card => {
+                if (filter === "all" || card.getAttribute("data-category") === filter) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+});
+function showNotification(message) {
+    alert(message);
+}
 
-                const repoCard = `
-                    <div class='col-sm-12 col-md-6 col-lg-4 mt-4 d-flex align-items-stretch'>
-                        <div class='card border-info'>
-                            <div class='card-body'>
-                                <div class='d-flex justify-content-between mb-2'>
-                                    <h6 class='card-subtitle text-warning text-uppercase'>${repoLanguage}</h6>
-                                    <h6 class='card-subtitle text-warning'>${repoPublishDate}</h6>
-                                </div>
-                                <a href='${repoUrl}' target='_blank' rel='noreferrer'>
-                                    <h5 class='card-title text-white'>${repoName}</h5>
-                                </a>
-                                <p class='card-text mt-2'>${repoDescription}</p>
-                            </div>
-                        </div>
-                    </div>
-                `;
 
-                $('#repository').append(repoCard);
-                repositoriesDisplayed++;
-            }
-        }
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter-tag");
+    const experienceCards = document.querySelectorAll(".experience-card");
+
+    filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+
+            // Add active class to clicked button
+            this.classList.add("active");
+
+            // Get filter category from the button
+            const filterCategory = this.getAttribute("data-filter");
+
+            // Loop through experience cards and show/hide based on the filter
+            experienceCards.forEach(card => {
+                const category = card.getAttribute("data-category");
+
+                if (filterCategory === "all" || category === filterCategory) {
+                    card.style.display = "block"; // Show matching cards
+                } else {
+                    card.style.display = "none"; // Hide non-matching cards
+                }
+            });
+        });
     });
 });

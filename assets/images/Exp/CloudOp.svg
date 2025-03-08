@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f0f4f8"/>
+  
+  <!-- Cloud Shape -->
+  <g fill="#cfe2f3">
+    <circle cx="300" cy="200" r="50"/>
+    <circle cx="350" cy="170" r="60"/>
+    <circle cx="400" cy="200" r="70"/>
+    <circle cx="450" cy="170" r="50"/>
+    <circle cx="500" cy="200" r="60"/>
+    <rect x="270" y="200" width="280" height="60" rx="30"/>
+  </g>
+  
+  <!-- Next.js Logo -->
+  <text x="330" y="220" font-size="24" font-weight="bold" fill="#000">Next.js</text>
+  
+  <!-- Optimization Features -->
+  <g font-size="16" fill="#333">
+    <text x="150" y="300">⚡ Serverless Deployment</text>
+    <text x="150" y="340">🌍 Edge Functions</text>
+    <text x="150" y="380">📦 Smart Caching</text>
+    <text x="150" y="420">🔍 Image Optimization</text>
+    <text x="150" y="460">📊 Database Optimization</text>
+  </g>
+  
+  <!-- Lines Connecting to Cloud -->
+  <g stroke="#999" stroke-width="2">
+    <line x1="200" y1="290" x2="300" y2="220"/>
+    <line x1="200" y1="330" x2="320" y2="220"/>
+    <line x1="200" y1="370" x2="340" y2="220"/>
+    <line x1="200" y1="410" x2="360" y2="220"/>
+    <line x1="200" y1="450" x2="380" y2="220"/>
+  </g>
+</svg>
