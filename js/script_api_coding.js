@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         leetCodeContainer.innerHTML = `
             <h5>LeetCode Badge: ${badge.name}</h5>
             <img src="${badge.img}" alt="${badge.name} Badge" class="badge-image" />
-            <p>Highest Rating: 2161</p>
+            <p>Highest Rating: 2214</p>
             <p>Highest Rank: 221</p>
         `;
     });
